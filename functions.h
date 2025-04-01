@@ -2,7 +2,8 @@
 #include <stdlib.h>
 #include <string.h>
 
-void ShowVector(int** vectorOfVector, int* auxVectorsSize, int numberOfDivisions){
+void ShowVector(int** vectorOfVector, int* auxVectorsSize, int numberOfDivisions)
+{
     int iterator;
     //percorre cada vetor
     for(iterator=0;iterator<numberOfDivisions;iterator++){
@@ -18,7 +19,8 @@ void ShowVector(int** vectorOfVector, int* auxVectorsSize, int numberOfDivisions
 }
 
 //efetiva a troca de dois valores em um vetor
-void Swap(int** vectorOfVector,int iterator, int i, int smallest){
+void Swap(int** vectorOfVector,int iterator, int i, int smallest)
+{
     int aux = vectorOfVector[iterator][i];
     vectorOfVector[iterator][i]= vectorOfVector[iterator][smallest];
     vectorOfVector[iterator][smallest]= aux;
@@ -26,7 +28,8 @@ void Swap(int** vectorOfVector,int iterator, int i, int smallest){
 }
 
 //SelectionSort = Ordena o vetor(do menor para o maior)
-void SortAuxVector(int** vectorOfVector, int* auxVectorsSize, int numberOfdivisions){
+void SortAuxVector(int** vectorOfVector, int* auxVectorsSize, int numberOfdivisions)
+{
     printf("Ordenando os vetores...\n\n");
     int iterator;
     //seleciona cada vetor auxiliar
